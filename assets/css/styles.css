@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+*{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Agrega este bloque de estilo personalizado */
+.btn-custom {
+    background-color: #4b6ef5;
+    border-color: #4b6ef5;
+    font-weight: lighter;
+}
+
+.btn-custom:hover {
+    background-color: #3452a5;
+    border-color: #3452a5;
+}
+
+/* Textos */
+
+.title-text{
+    color: #4b6ef5;
+}
+.form_text_title{
+    color: white;
+    font-weight: lighter;
+}
+
+.formulario{
+    background-color: #009ee0;
+}
+.text_agencia, .email-span {
+    text-decoration: none; /* Elimina el subrayado del enlace, si no es necesario */
+}
+.text_para, .p-text, .email-span, .text-par, .text_agencia {
+    color: #666666d8;
+}
+
+span{
+    color: #15b0f3;
+}
+.rect-img {
+    width: 100%;
+    max-width: 1200px;
+    height: 252px;
+    background-color: #4b6ef5;
+    border-radius: 21px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Ajusta el relleno según tus necesidades */
+}
+
+.persona_img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 156px;
+}
+
+@media (max-width: 768px) {
+    .rect-img {
+        flex-direction: row; /* Mantener la disposición en fila */
+        align-items: center;
+    }
+
+    .persona_img {
+        width: 39%;
+        margin-bottom: 7.3rem; /* Eliminar el margen inferior */
+    }
+
+    h5 {
+        font-size: 18px;
+        margin-bottom: 0; /* Eliminar el margen inferior en dispositivos móviles */
+    }
+}
+
+@media (max-width: 425px) {
+    h5 {
+        font-size: 15px; /* Tamaño de fuente para dispositivos con un ancho máximo de 425px */
+    }
+    .rect-img {
+        flex-direction: column; /* Cambiar la disposición a columna para que la imagen esté debajo del texto */
+        align-items: center; /* Centrar elementos en el eje transversal */
+        height: 380px;
+    }
+    .persona_img {
+        width: 39% !important;; /* Hacer que la imagen ocupe el 100% del ancho del contenedor */
+        margin-top: 3.4px; /* Eliminar el margen inferior */
+    }
+}
+
+@media (max-width: 375px) {
+    .persona_img {
+        width: 39% !important;
+        margin-top: 11.4px !important;
+    }
+}
+
+@media (max-width: 320px) {
+    .persona_img {
+        width: 39% !important;
+        margin-top: 2.4px !important;
+    }
+}
